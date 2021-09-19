@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="The site of ikaros altantzis,Το σιτε του Ικαρου αλταντζί">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+	<div class="sitetitle">
+				<p id="firstline">Welcome to the site of ikaros altantzis!!</p>
+		<p class="secondline">Bellow you will find highlights of my life.</p>
+		</div>
+	
+	<script>
+		function generateRandomColor() {
+  let letters = '0123456789ABCDEF';
+  let color = '#';
+  for (let i = 0; i < 6; i++) {
+    color += letters[Math.floor(Math.random() * 16)];
+  }
+  return color;
+}
+
+
+var text = document.getElementById('firstline');
+
+function changeColor() {
+	let randomcolor=generateRandomColor()
+    firstline.style.color = randomcolor;
+}
+		
+var intervalId = window.setInterval(function(){
+   changeColor();
+}, 1000);
+ 
+		
+		
+
+</script>
+	
+</head>
+<body>
+    <div class="mainimage">
+		<div class ="firstrow">
+       <img src="https://ikarosaltantzis.eu/img/ayta%20maresoun.jpg" width="600px" alt="My future wife" class="image">
+								<p class="imagedes">My future wife!</p>							
+		</div>
+		<div class="secondrow">
+       <img src="https://ikarosaltantzis.eu/img/119471783_337343730876910_5903260169240397352_n.jpg" alt="O SAKIS GAMIETE" class="image">
+			<p class="imagedes1">Sakis gamias</p>
+			<img src="https://ikarosaltantzis.eu/img/228197392_1273748986390753_1796227786020338586_n.jpg" alt="pound for pound" width="630px" class="image">
+			<p class="imagedes1">Pound 4 pound</p>
+    </div>
+		</div>
+
+
+<div id="slider">
+<figure>
+<img src="https://ikarosaltantzis.eu/img/30020.jpg" width="530" alt>
+<img src="https://ikarosaltantzis.eu/img/29289.jpg" width="530" alt>
+<img src="https://ikarosaltantzis.eu/img/received_275613240499963.jpeg" width="530" alt>
+<img src="https://ikarosaltantzis.eu/img/29291.jpg"  width="530" alt>
+<img src="https://ikarosaltantzis.eu/img/30020.jpg" width="530" alt>
+</figure>
+</div>
+
+</body>
+</html>
